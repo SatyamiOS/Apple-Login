@@ -14,6 +14,8 @@
 		202FE45223A16B3D002744B0 /* AppleLogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 202FE45023A16B3D002744B0 /* AppleLogin.xcdatamodeld */; };
 		202FE45423A16B44002744B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 202FE45323A16B44002744B0 /* Assets.xcassets */; };
 		202FE45723A16B44002744B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 202FE45523A16B44002744B0 /* LaunchScreen.storyboard */; };
+		202FE45F23A16DFF002744B0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FE45E23A16DFF002744B0 /* User.swift */; };
+		202FE46123A16F12002744B0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202FE46023A16F12002744B0 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		202FE45323A16B44002744B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		202FE45623A16B44002744B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		202FE45823A16B44002744B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		202FE45E23A16DFF002744B0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		202FE46023A16F12002744B0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		202FE46223A16FD7002744B0 /* AppleLogin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleLogin.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 		202FE44623A16B3D002744B0 /* AppleLogin */ = {
 			isa = PBXGroup;
 			children = (
+				202FE46223A16FD7002744B0 /* AppleLogin.entitlements */,
 				202FE44723A16B3D002744B0 /* AppDelegate.swift */,
 				202FE44923A16B3D002744B0 /* SceneDelegate.swift */,
 				202FE44B23A16B3D002744B0 /* ViewController.swift */,
@@ -66,6 +72,8 @@
 				202FE45523A16B44002744B0 /* LaunchScreen.storyboard */,
 				202FE45823A16B44002744B0 /* Info.plist */,
 				202FE45023A16B3D002744B0 /* AppleLogin.xcdatamodeld */,
+				202FE45E23A16DFF002744B0 /* User.swift */,
+				202FE46023A16F12002744B0 /* MainViewController.swift */,
 			);
 			path = AppleLogin;
 			sourceTree = "<group>";
@@ -144,6 +152,8 @@
 				202FE44C23A16B3D002744B0 /* ViewController.swift in Sources */,
 				202FE44823A16B3D002744B0 /* AppDelegate.swift in Sources */,
 				202FE45223A16B3D002744B0 /* AppleLogin.xcdatamodeld in Sources */,
+				202FE46123A16F12002744B0 /* MainViewController.swift in Sources */,
+				202FE45F23A16DFF002744B0 /* User.swift in Sources */,
 				202FE44A23A16B3D002744B0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +298,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppleLogin/AppleLogin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 733HD7345A;
 				INFOPLIST_FILE = AppleLogin/Info.plist;
@@ -297,6 +309,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Satyam.AppleLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,6 +319,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AppleLogin/AppleLogin.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 733HD7345A;
 				INFOPLIST_FILE = AppleLogin/Info.plist;
@@ -315,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Satyam.AppleLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
